@@ -4,6 +4,23 @@ html, body {
     font-family: 'Poppins', sans-serif;
     color: #222529;
 }
+
+.btn {
+    border-radius: 0;
+}
+
+.btn-theme {
+    background-color: #ff7373;
+    color: #ffffff;
+    padding: 15px 50px;
+}
+.btn-theme:hover {
+    background-color: #222529;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
 .title-1 {
     font-size: 65px;
     font-weight: 900;
@@ -86,6 +103,41 @@ header .menu-icons {
         color: #ffffff;
         text-decoration: none;
     }
+
+.showcase {
+    background: #f3f3f3;
+    background: linear-gradient(90deg, #f3f3f3 0%, #f5f5f5 100%);
+}
+
+    .showcase .container {
+        display: grid;
+        grid-template-areas: "column1";
+    }
+
+    .showcase .column-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+        .showcase .column-1 .content {
+            text-align: center; 
+        }
+        .showcase .column-1 .content .title-1 {
+            font-size: 2.2em; 
+        }
+        .showcase .column-1 .content .title-2 {
+            font-size: 1.5em; 
+        }
+        .showcase .column-1 .content .title-3 {
+            font-size: 1em; 
+        }
+
+
+    .showcase .column-2 {
+        display: none;
+    }
+
 
 
 
