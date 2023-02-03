@@ -45,8 +45,10 @@ header .menu-links {
         font-weight: 500;
         text-decoration: none;
         color: #222529;
-        margin: 0 12px;
+        margin: 10px 12px;
+        display: block;
     }
+
     header .menu-links .menu-link:hover,
     header .menu-links .menu-link.active {
         color: #ff7373;
@@ -61,6 +63,10 @@ header .menu-icons {
     justify-content: flex-end;
     align-items: center;
 }
+    header .menu-icons nav {
+        display: none;
+    }
+
     header .menu-icons .menu-link {
         height: 36px;
         width: 36px;
@@ -96,5 +102,9 @@ header .menu-icons {
         display: flex !important;
         justify-content: center;
         align-items: center;
+    }
+
+    header .menu-icons nav {
+        display: flex;
     }
 }
