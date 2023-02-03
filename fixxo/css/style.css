@@ -22,3 +22,45 @@ html, body {
     line-height: 1;
     margin-bottom: 16px;
 }
+
+
+.header .container {
+    display: grid;
+    grid-template-areas: "logotype menuicons"
+                         "menulinks menulinks";
+}
+
+.logotype {
+    grid-area: logotype;
+    border: 1px solid black;
+}
+.menu-links {
+    grid-area: menulinks;
+    border: 1px solid black;
+}
+.menu-icons {
+    grid-area: menuicons;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: 1px solid black;
+}
+
+
+
+
+@media (min-width: 992px) {
+    .header .container {
+        grid-template-areas: "logotype menulinks menuicons";
+    }
+    
+    #toggle-menu-button {
+        display: none;
+    }
+    
+    .menu-links {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+    }
+}
