@@ -24,41 +24,75 @@ html, body {
 }
 
 
-.header .container {
+header .container {
     display: grid;
     grid-template-areas: "logotype menuicons"
                          "menulinks menulinks";
 }
 
-.logotype {
+header .logotype {
     grid-area: logotype;
-    border: 1px solid black;
+    font-size: 35px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #222529;
 }
-.menu-links {
+
+header .menu-links {
     grid-area: menulinks;
-    border: 1px solid black;
 }
-.menu-icons {
+    header .menu-links .menu-link {
+        font-weight: 500;
+        text-decoration: none;
+        color: #222529;
+        margin: 0 12px;
+    }
+    header .menu-links .menu-link:hover,
+    header .menu-links .menu-link.active {
+        color: #ff7373;
+        text-decoration: none;
+    }
+
+
+
+header .menu-icons {
     grid-area: menuicons;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    border: 1px solid black;
 }
-
+    header .menu-icons .menu-link {
+        height: 36px;
+        width: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        color:#222529;
+        border-radius: 50%;
+        text-decoration: none;
+        box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.15);
+        margin: 5px;
+    }
+    header .menu-icons .menu-link:hover,
+    header .menu-icons .menu-link.active {
+        background-color: #222529;
+        color: #ffffff;
+        text-decoration: none;
+    }
 
 
 
 @media (min-width: 992px) {
-    .header .container {
-        grid-template-areas: "logotype menulinks menuicons";
-    }
-    
     #toggle-menu-button {
         display: none;
     }
-    
-    .menu-links {
+
+    header .container {
+        grid-template-areas: "logotype menulinks menuicons";
+    }
+       
+    header .menu-links {
         display: flex !important;
         justify-content: center;
         align-items: center;
