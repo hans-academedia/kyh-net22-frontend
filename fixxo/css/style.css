@@ -22,21 +22,21 @@ html, body {
 
 
 .title-1 {
-    font-size: 65px;
+    font-size: 2.4em;
     font-weight: 900;
     line-height: 1;
     margin-bottom: 32px;
 }
 .title-2 {
-    font-size: 35px;
+    font-size: 1.5em;
     font-weight: 700;
     line-height: 1;
     margin-bottom: 16px;
 }
 .title-3 {
-    font-size: 20px;
+    font-size: 1em;
     font-weight: 400;
-    line-height: 1;
+    line-height: 1.5;
     margin-bottom: 16px;
 }
 
@@ -192,15 +192,7 @@ header #menu {
         .showcase .column-1 .content {
             text-align: center; 
         }
-        .showcase .column-1 .content .title-1 {
-            font-size: 2.2em; 
-        }
-        .showcase .column-1 .content .title-2 {
-            font-size: 1.5em; 
-        }
-        .showcase .column-1 .content .title-3 {
-            font-size: 1em; 
-        }
+
 
 
     .showcase .column-2 {
@@ -210,18 +202,53 @@ header #menu {
         .showcase .column-2 img {
             height: 100%;
             width: auto;
+            object-fit: fit;
         }
 
 
 @media (min-width: 992px) {
+    .title-1 {
+        font-size: 3em;
+    }
+    .title-2 {
+        font-size: 2em;
+    }
+    .title-3 {
+        font-size: 1.1em;
+    }
+
 
     .showcase .container {
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "column1 column2";
     }
 
+    .showcase .column-1 .content {
+        text-align: left; 
+    }
+
     .showcase .column-2 {
         display: block;
     }
+
+    .showcase .column-2 img {    
+        height: 550px;
+        width: auto;
+    }
 }
 
+@media (min-width: 1400px) {
+    .title-1 {
+        font-size: 4em;
+    }
+    .title-2 {
+        font-size: 2.5em;
+    }
+    .title-3 {
+        font-size: 1.5em;
+    }
+    
+    .showcase .column-2 img {
+        height: 700px;
+    }
+}
