@@ -1,0 +1,13 @@
+.box {
+    height: 150px;
+    width: 150px;
+    background-color: bisque;
+    border: 1px solid lightgray;
+}
+
+#parent {
+
+}
+
+#child-1 {}
+#child-2 {}
