@@ -5,10 +5,8 @@
     border: 1px solid darkgray;
 }
 
-
-
-#grandparent {}
-
-#parent {}
-
-#child {}
+#child {
+    position: absolute;
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+}
