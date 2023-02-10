@@ -5,6 +5,10 @@ html, body {
     color: #222529;
 }
 
+button {
+    border: none;
+}
+
 .btn {
     border-radius: 0;
 }
@@ -13,11 +17,17 @@ html, body {
     background-color: #ff7373;
     color: #ffffff;
     padding: 15px 50px;
+    text-decoration: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    transition: background-color 0.25s;
+    
 }
 .btn-theme:hover {
     background-color: #222529;
     color: #ffffff;
-    text-decoration: none;
+    text-decoration: none;    
 }
 
 
@@ -48,6 +58,8 @@ html, body {
     font-size: 1.5rem;
     padding: 5px 16px;
     background-color: #ffffff;
+    border-radius: 50%;
+    transition: background-color 0.25s, color 0.15s;
 }
 .totop-arrow:hover {
     border: 1px solid #222529;
@@ -108,6 +120,7 @@ header .menu-links .menu-link {
     color: #222529;
     margin: 10px 12px;
     display: block;
+    transition: color 0.15s;
 }
 
 header .menu-links .menu-link:hover,
@@ -144,6 +157,7 @@ header .menu-icons {
         text-decoration: none;
         box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.15);
         margin-left: 1rem;
+        transition: background-color 0.25s, color 0.20s;
     }
     header .menu-icons .menu-link:hover,
     header .menu-icons .menu-link.active {
@@ -153,7 +167,7 @@ header .menu-icons {
     }
 
 header #toggle-icon {
-    grid-area: toggleicon;
+    grid-area: toggleicon;   
 }
 
 header #menu {
