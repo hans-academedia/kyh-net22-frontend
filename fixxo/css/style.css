@@ -312,9 +312,6 @@ header #menu {
 
 
 
-
-
-
 /* featured products */
 .featured-products {
 
@@ -332,9 +329,8 @@ header #menu {
     }
 
     .featured-products .card {
-        border-radius: 0;
+        border-radius: 0; 
     }
-
 
         .featured-products .card .card-body {
             text-align: center;
