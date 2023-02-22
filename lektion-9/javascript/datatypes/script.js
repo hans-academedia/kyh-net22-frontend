@@ -59,13 +59,28 @@ let subCategory = "Laptops"
 var apiUrl = "http://localhost:7071/api/products?category=" + category
 var apiUrl = "http://localhost:7071/api/products?category=" + category +"&subcategory=" + subCategory
 var apiUrl = ` http://localhost:7071/api/products?category=${category}&subcategory=${subCategory}`
-console.log(apiUrl);
 
 var modifiedApiUrl = apiUrl.toLocaleUpperCase()
 var modifiedApiUrl = apiUrl.toLocaleLowerCase()
-console.log(modifiedApiUrl)
 
 var count = apiUrl.length
 var trimmed = apiUrl.trim()
-console.log(count)
-console.log(trimmed)
+
+// NUMBER  - till för tal
+var value = 1
+var value = 1.1
+var value = 123e-5
+var value = 123e5
+var value = 0.123456789012345678
+var value = 9234567890123456
+var value = 9999999999999999
+
+// BOOLEAN - sant eller falskt
+var isActive = true
+var isActive = false
+
+// NULL och Undefined
+var ref                 //    <= undefined
+var ref = null          //    <= object
+var ref = undefined     //    <= undefined       
+console.log(typeof ref)
