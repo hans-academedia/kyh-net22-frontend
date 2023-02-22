@@ -25,25 +25,72 @@ header {
             grid-area: toggleicon;
             display: flex;
             justify-self: flex-end;
-
-            i {}
+            align-self: center;
+            
         }
 
         .menus {
+            grid-area: menus;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas: "menulinks"
+                                 "menuicons";
+
+
             .menu-links {
+                grid-area: menulinks;
+                font-size: 1.1em;
+
                 a {
+                    color: $color-dark-2;
+                    text-decoration: none;
+                    display: block;
+                    font-weight: 500;
+                    margin: 15px 12px;
+                    transition: color 0.15s;
 
                     &:hover {
-
+                        color: $color-theme;
+                        text-decoration: none;
                     }
                 }
             }
 
             .menu-icons {
-                a {
-                    &:hover {
+                grid-area: menuicons;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+@media(min-width: 992px) {
+    header {
+        .container {
+            grid-template-columns: 1fr 2fr;
+            grid-template-areas: "logotype menus";
 
-                    }
+            .toggle-icon {
+                display: none;
+            }
+
+            .menus {
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: "menulinks menuicons"; 
+
+                .menu-links {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .menu-icons {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    margin-top: 0;
                 }
             }
         }
