@@ -35,7 +35,7 @@
         .then(data => callback(data))
     }
 
-    getTodo(2, function(data) {
+    getTodo('2', function(data) {
         document.getElementById('title').innerText = data.title
         document.querySelector('#completed').innerText = data.completed
     })
