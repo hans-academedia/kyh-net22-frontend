@@ -41,10 +41,9 @@
     }
 
     const getDisplayName = (firstName, lastName) => `${firstName} ${lastName}`
+
+
+
 */
 
-const getDisplayName = (firstName, lastName) => `${firstName} ${lastName}`
 
-
-let displayName = getDisplayName("Hans", "Mattin-Lassei")
-console.log(displayName)
