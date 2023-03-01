@@ -4,10 +4,14 @@ const handleSubmit = (e) => {
 
 const togglePassword = () => {
     const password = document.getElementById('password')
-    
-    if(password.type === "password")
+    const icon = document.getElementById('toggle-password-icon')
+
+    if(password.type === "password") {
         password.type = "text"
-    else
+        icon.innerHTML = '<i class="fa-regular fa-eye-slash"></i>'
+
+    } else {
         password.type = "password"
-        
+        icon.innerHTML = '<i class="fa-regular fa-eye"></i>'
+    }
 }

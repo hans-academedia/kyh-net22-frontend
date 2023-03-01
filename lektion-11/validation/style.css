@@ -7,13 +7,15 @@
 
 input, label {
     display: block;
-    margin-bottom: 5px;
 } 
+
+label {
+    margin-bottom: 5px;
+}
 
 input {
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
     border: 1px solid lightgray;
     outline: none;
 }
@@ -22,20 +24,20 @@ input:focus {
     border: 1px solid gray;
 }
 
-.password-box {
+.password-group {
     position: relative;
 }
 
 #password {
-    position: absolute;
-    left: 0;
-    top: 0;
-
+    position: relative;
 }
 
 i {
+    color:gainsboro;
+    font-size: 1.3em;
     position: absolute;
-    right: 15px;
-    top: 15px;
+    padding: 12px 15px;
+    right: 0px;
+    top: 0px;
     cursor: pointer;
 }

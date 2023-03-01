@@ -17,21 +17,30 @@
                     <div class="card">
                         <div class="card-body">
                             <form onsubmit="handleSubmit(event)">
-                                <label for="">Förnamn</label>
-                                <input value="Hans" type="text">
-                                <label for="">Efternamn</label>
-                                <input value="Mattin-Lassei" type="text">
-                                <label for="">E-postadress</label>
-                                <input value="hans@domain.com" type="text">
-                                
-                                <label for="">Lösenord</label>
-                                <div class="password-box">
-                                    <input id="password"value="BytMig123!" type="password">
-                                    <i onclick="togglePassword()" class="fa-regular fa-eye"></i>
+                                <div class="mb-3">
+                                    <label for="">Förnamn</label>
+                                    <input value="Hans" type="text">
                                 </div>
+                                <div class="mb-3">
+                                    <label for="">Efternamn</label>
+                                    <input value="Mattin-Lassei" type="text">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="">E-postadress</label>
+                                    <input value="hans@domain.com" type="email">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="">Lösenord</label>
+                                    <div class="password-group">
+                                        <input id="password" value="BytMig123!" type="password">
+                                        <span id="toggle-password-icon" onclick="togglePassword()"><i class="fa-regular fa-eye"></i></span>
+                                    </div>
+                                </div>
+                                <div class="mt-4 d-grid">
+                                    <button class="btn btn-success">SUBMIT</button>
+                                </div>                               
                                 
                                 
-                                <button class="btn btn-success">SUBMIT</button>
                                 
                             </form>
                         </div>
