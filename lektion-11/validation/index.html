@@ -19,20 +19,20 @@
                             <form onsubmit="handleSubmit(event)">
                                 <div class="mb-3">
                                     <label for="">Förnamn</label>
-                                    <input value="Hans" type="text">
+                                    <input onkeyup="validateFirstName(event)" type="text">
                                 </div>
                                 <div class="mb-3">
                                     <label for="">Efternamn</label>
-                                    <input value="Mattin-Lassei" type="text">
+                                    <input type="text">
                                 </div>
                                 <div class="mb-3">
                                     <label for="">E-postadress</label>
-                                    <input value="hans@domain.com" type="email">
+                                    <input type="email">
                                 </div>
                                 <div class="mb-3">
                                     <label for="">Lösenord</label>
                                     <div class="password-group">
-                                        <input id="password" value="BytMig123!" type="password">
+                                        <input id="password" type="password">
                                         <span id="toggle-password-icon" onclick="togglePassword()"><i class="fa-regular fa-eye"></i></span>
                                     </div>
                                 </div>

@@ -28,11 +28,7 @@ input:focus {
     position: relative;
 }
 
-#password {
-    position: relative;
-}
-
-i {
+.password-group i {
     color:gainsboro;
     font-size: 1.3em;
     position: absolute;

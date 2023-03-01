@@ -1,7 +1,3 @@
-const handleSubmit = (e) => {
-    e.preventDefault()
-}
-
 const togglePassword = () => {
     const password = document.getElementById('password')
     const icon = document.getElementById('toggle-password-icon')
@@ -15,3 +11,20 @@ const togglePassword = () => {
         icon.innerHTML = '<i class="fa-regular fa-eye"></i>'
     }
 }
+
+const handleSubmit = (e) => {
+    e.preventDefault()
+}
+
+
+const validateFirstName = (e) => {
+    const regEx = /^[A-Z]([a-zA-Z\u00C0-\u017F]+(([',. -][a-zA-Z ])?[a-zA-Z]*)){1,30}$/
+    if (!regEx.test(e.target.value)) {
+        console.log("firstname not valid")
+        return false
+    }
+        
+    console.log("firstname valid")
+    return true
+}
+
