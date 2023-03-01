@@ -16,23 +16,23 @@
                 <div class="col col-sm-9 col-lg-7 col-xl-5">
                     <div class="card">
                         <div class="card-body">
-                            <form onsubmit="handleSubmit(event)">
+                            <form novalidate onsubmit="handleSubmit(event)">
                                 <div class="mb-3">
                                     <label for="">Förnamn</label>
-                                    <input onkeyup="validateFirstName(event)" type="text">
+                                    <input maxlength="20" onkeyup="validateName(event)" type="text">
                                 </div>
                                 <div class="mb-3">
                                     <label for="">Efternamn</label>
-                                    <input type="text">
+                                    <input maxlength="20" onkeyup="validateName(event)" type="text">
                                 </div>
                                 <div class="mb-3">
                                     <label for="">E-postadress</label>
-                                    <input type="email">
+                                    <input onkeyup="validateEmail(event)" type="email">
                                 </div>
                                 <div class="mb-3">
                                     <label for="">Lösenord</label>
                                     <div class="password-group">
-                                        <input id="password" type="password">
+                                        <input id="password" onkeyup="validatePassword(event)" type="password">
                                         <span id="toggle-password-icon" onclick="togglePassword()"><i class="fa-regular fa-eye"></i></span>
                                     </div>
                                 </div>

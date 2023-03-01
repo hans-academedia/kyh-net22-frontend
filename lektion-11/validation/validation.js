@@ -1,4 +1,4 @@
-const togglePassword = () => {
+const toggu017FlePassword = () => {
     const password = document.getElementById('password')
     const icon = document.getElementById('toggle-password-icon')
 
@@ -16,9 +16,10 @@ const handleSubmit = (e) => {
     e.preventDefault()
 }
 
+const validateName = (e) => {
+    e.target.value = e.target.value.charAt(0).toUpperCase() + e.target.value.slice(1)
 
-const validateFirstName = (e) => {
-    const regEx = /^[A-Z]([a-zA-Z\u00C0-\u017F]+(([' -][a-zA-Z])?[a-zA-Z]*)){1,30}$/
+    const regEx = /^[A-Ö]([a-öA-Ö\u00C0-\u017F]+(([' -][a-öA-Ö])?[a-öA-Ö]*)){1,}$/
     if (!regEx.test(e.target.value)) {
         console.log("firstname not valid")
         return false
@@ -28,3 +29,26 @@ const validateFirstName = (e) => {
     return true
 }
 
+const validateEmail = (e) => {
+    const regEx = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    if (!regEx.test(e.target.value)) {
+        console.log("email not valid")
+        return false
+    }
+        
+    console.log("email valid")
+    return true
+}
+
+const validatePassword = (e) => {
+    const regEx = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/;
+
+    if (!regEx.test(e.target.value)) {
+        console.log("password not valid")
+        return false
+    }
+        
+    console.log("password valid")
+    return true
+}
