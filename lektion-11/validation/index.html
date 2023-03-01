@@ -19,22 +19,34 @@
                             <form novalidate onsubmit="handleSubmit(event)">
                                 <div class="mb-3">
                                     <label for="">Förnamn</label>
-                                    <input maxlength="20" onkeyup="validateName(event)" type="text">
+                                    <input id="firstName" minlength="2" maxlength="20" onkeyup="validate(event)" type="text" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="">Efternamn</label>
-                                    <input maxlength="20" onkeyup="validateName(event)" type="text">
+                                    <input id="lastName" minlength="2" maxlength="20" onkeyup="validate(event)" type="text" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="">E-postadress</label>
-                                    <input onkeyup="validateEmail(event)" type="email">
+                                    <input id="email" onkeyup="validate(event)" type="email" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="">Lösenord</label>
                                     <div class="password-group">
-                                        <input id="password" onkeyup="validatePassword(event)" type="password">
-                                        <span id="toggle-password-icon" onclick="togglePassword()"><i class="fa-regular fa-eye"></i></span>
+                                        <input id="password" onkeyup="validate(event)" type="password" required>
+                                        <!-- <span id="toggle-password-icon" onclick="togglePassword()"><i class="fa-regular fa-eye"></i></span> -->
                                     </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="">Gatuadress</label>
+                                    <input type="text">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="">Postnummer</label>
+                                    <input type="text">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="">Stad</label>
+                                    <input type="text">
                                 </div>
                                 <div class="mt-4 d-grid">
                                     <button class="btn btn-success">SUBMIT</button>
