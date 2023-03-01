@@ -18,7 +18,7 @@ const handleSubmit = (e) => {
 
 
 const validateFirstName = (e) => {
-    const regEx = /^[A-Z]([a-zA-Z\u00C0-\u017F]+(([',. -][a-zA-Z ])?[a-zA-Z]*)){1,30}$/
+    const regEx = /^[A-Z]([a-zA-Z\u00C0-\u017F]+(([' -][a-zA-Z])?[a-zA-Z]*)){1,30}$/
     if (!regEx.test(e.target.value)) {
         console.log("firstname not valid")
         return false
