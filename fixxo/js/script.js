@@ -72,7 +72,7 @@ async function handleContactForm(e) {
 
     const form = {
         name: "Hans Mattin-Lassei",
-        email: "hans.mattin-lassei@epndata.com",
+        email: "",
         comments: "Jag vill att du kontaktar mig så snart som möjligt. Jag behöver återkalla en order."
     }
 
