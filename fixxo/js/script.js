@@ -1,3 +1,16 @@
-// document.getElementById("toggle-menu-button").addEventListener("click", () => {
-//     document.getElementById("menu-icons-links").classList.add("d-flex");
-// })
+try {
+    const toggleButton = document.querySelector('[data-option="toggle"]')
+    const target = toggleButton.getAttribute('data-target')
+    toggleButton.addEventListener('click', toggleTarget)
+
+    function toggleTarget() {
+        const element = document.querySelector(target)
+
+        if (!element.classList.contains('hide')) {
+            element.classList.add('hide')
+        } else {
+            element.classList.remove('hide')
+        }
+    }
+} 
+catch {}

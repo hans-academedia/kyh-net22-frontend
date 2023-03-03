@@ -27,6 +27,10 @@ header {
         color: $color-dark-2;
     }
 
+    .hide {
+        display: none;
+    }
+
     #menu {
         grid-area: menu;
         grid-template-areas: "menulinks"
@@ -105,7 +109,6 @@ header {
     #toggle-icon {
         grid-area: toggleicon;   
         justify-content: flex-end;
-        margin-top: -10px;
 
         @include lg {
             display: none;
