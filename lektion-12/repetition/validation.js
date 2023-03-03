@@ -36,8 +36,11 @@ function validate(event) {
 }
 
 
-function handleLogin(e) {
+async function handleLogin(e) {
     e.preventDefault()
+    const errors = []
+    const errorMessage = document.getElementById('errorMessage')
+    errorMessage.innerHTML = ''
 
     for(let element of e.target) {
         if(element.required) {
@@ -45,18 +48,47 @@ function handleLogin(e) {
             
             if (element.value.length === 0) {
                 errorElement.innerHTML = `${element.id} is required.`
+                errors.push(false)
             } else {
                 errorElement.innerHTML = ``
 
                 switch(element.type) {
                     case 'email':
-                        validateEmail(element)
+                        errors.push(validateEmail(element))
                         break
                     case 'password':
-                        validatePassword(element)
+                        errors.push(validatePassword(element))
                         break
                 }
             }
         }
+    }
+
+    if (!errors.includes(false)) {
+        //https://localhost:7058/api/login
+
+        const data = {
+            email: e.target['email'].value,
+            password: e.target['password'].value
+        }
+
+        const res = await fetch('https://localhost:7058/api/login', {
+            method: 'post',
+            headers: {
+                'Content-Type': 'application/json'
+                // 'Autorization': `bearer ${sessionStorage.getItem("accessToken")}`
+            },
+            body: JSON.stringify(data)
+        })
+
+        if (res.status === 200) {
+           const result = await res.text()
+           sessionStorage.setItem('accessToken', result)
+
+        } else {
+            errorMessage.innerHTML = 'Incorrect email or password'
+        }
+
+        
     }
 }
