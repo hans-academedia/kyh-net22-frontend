@@ -1,3 +1,18 @@
+const arrow = document.querySelector('#top-arrow')
+arrow.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: "smooth"})
+})
+
+window.addEventListener('scroll', function() {
+    const scrollPosY = window.scrollY
+
+    if (scrollPosY >= 100) {
+        arrow.style.display = 'block'
+    } else {
+        arrow.style.display = 'none'
+    }
+})
+
 try {
     const toggleButton = document.querySelector('[data-option="toggle"]')
     const target = toggleButton.getAttribute('data-target')
@@ -12,5 +27,64 @@ try {
             element.classList.remove('hide')
         }
     }
-} 
-catch {}
+} catch {}
+
+
+async function getProducts(target, tag) {
+    const element = document.querySelector(target)
+
+    const res = await fetch(`https://kyh-net22.azurewebsites.net/api/products/${tag}`)
+    const data = await res.json()
+
+    for(let item of data) {
+        element.innerHTML += 
+        `
+            <div class="collection-card">
+                <div class="card-content">
+                    <img src="${item.imageUrl}" alt="${item.name}">
+                    <div class="card-menu">
+                        <nav class="icons">
+                            <a class="link" href="#"><i class="fa-regular fa-heart"></i></a>
+                            <a class="link" href="#"><i class="fa-regular fa-bag-shopping"></i></a>
+                        </nav>
+                        <a class="btn-theme" href="#">QUICK VIEW</a>
+                    </div>
+                <div class="card-body">
+                    <p class="category">${item.category}</p>
+                    <p class="title">${item.name}</p>
+                    <div class="ranking">
+                        <i class="fa-solid fa-sharp fa-star"></i>
+                        <i class="fa-solid fa-sharp fa-star"></i>
+                        <i class="fa-solid fa-sharp fa-star"></i>
+                        <i class="fa-solid fa-sharp fa-star"></i>
+                        <i class="fa-regular fa-sharp fa-star"></i>
+                    </div>
+                    <p class="price">${item.originalPrice} ${item.currency}</p>
+                </div>
+            </div>
+        </div>
+        `
+    }
+}
+
+async function handleContactForm(e) {
+    e.preventDefault()
+
+    const form = {
+        name: "Hans Mattin-Lassei",
+        email: "hans.mattin-lassei@epndata.com",
+        comments: "Jag vill att du kontaktar mig så snart som möjligt. Jag behöver återkalla en order."
+    }
+
+    const res = await fetch('https://kyh-net22.azurewebsites.net/api/contacts', {
+        method: 'post',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(form)
+    })
+    
+    if (res.status === 200)
+        console.log('tack för din förfrågan!')
+
+}

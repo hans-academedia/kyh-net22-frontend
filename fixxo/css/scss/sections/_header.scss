@@ -27,10 +27,6 @@ header {
         color: $color-dark-2;
     }
 
-    .hide {
-        display: none;
-    }
-
     #menu {
         grid-area: menu;
         grid-template-areas: "menulinks"
