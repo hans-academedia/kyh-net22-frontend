@@ -14,13 +14,13 @@
 
 
     <div class="center-content">
-        <form>
+        <form onsubmit="handleLogin(event)" novalidate>
             <div class="f-group">
-                <input id="email" name="email" type="email">
+                <input id="email" type="email" placeholder="Your Email" required onkeyup="validate(event)">
                 <div id="error-email" class="error"></div>
             </div>
             <div class="f-group">
-                <input id="password" name="password" type="password">
+                <input id="password" type="password" placeholder="Your Password" required onkeyup="validate(event)">
                 <div id="error-password" class="error"></div>
             </div>
             <button type="submit">SUBMIT</button>
