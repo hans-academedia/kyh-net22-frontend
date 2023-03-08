@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 
 const Header = () => {
+  const [hideMenu, setHideMenu] = useState(true)
+
+
   return (
     <header>
       <div className="container">
         <NavLink id="logotype" to="/">Fixxo.</NavLink>
-        <div id="menu" className="hide">
+        <div id="menu" className={hideMenu ? 'hide' : ''}>
           <nav id="menu-links" className="links">
             <NavLink className="link" to="/">Home</NavLink>
             <NavLink className="link" to="/products">Products</NavLink>
@@ -21,7 +24,7 @@ const Header = () => {
           </nav>
         </div>
         <div id="toggle-icon" className="icons">
-          <button className="link" data-option="toggle" data-target="#menu" ><i className="fa-regular fa-bars"></i></button>
+          <button className="link" onClick={() => setHideMenu(!hideMenu)} ><i className="fa-regular fa-bars"></i></button>
         </div>
 
       </div>

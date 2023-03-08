@@ -8,7 +8,7 @@ const Home = () => {
     <>
         <Header />
         <Showcase />
-        <CollectionGrid />
+        <CollectionGrid title="Featured Products" url="https://kyh-net22.azurewebsites.net/api/products/featured" />
     </>
   )
 }
