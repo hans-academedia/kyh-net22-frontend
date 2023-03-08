@@ -6,12 +6,12 @@ import Header from '../partials/Header'
 
 const Contacts = () => {
   return (
-    <div>
+    <>
       <Header />
       <Breadcrumb />
       <GoogleMaps />
       <ContactForm />
-    </div>
+    </>
   )
 }
 

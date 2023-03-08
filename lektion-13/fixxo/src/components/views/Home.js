@@ -5,11 +5,11 @@ import Showcase from '../partials/Showcase'
 
 const Home = () => {
   return (
-    <div>
+    <>
         <Header />
         <Showcase />
         <CollectionGrid />
-    </div>
+    </>
   )
 }
 
