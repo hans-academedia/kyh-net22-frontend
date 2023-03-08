@@ -1,5 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import StarRating from './StarRating'
+
 
 const CollectionCard = ({item}) => {
   return (
@@ -13,16 +15,12 @@ const CollectionCard = ({item}) => {
             <NavLink className="btn-theme" to="/products/">QUICK VIEW</NavLink>
         </div>
         <div className="body-section">
-            <p className="category">{item.category}</p>
-            <p className="title">{item.name}</p>
-            <div className="ranking">
-                <i className="fa-solid fa-sharp fa-star"></i>
-                <i className="fa-solid fa-sharp fa-star"></i>
-                <i className="fa-solid fa-sharp fa-star"></i>
-                <i className="fa-solid fa-sharp fa-star"></i>
-                <i className="fa-regular fa-sharp fa-star"></i>
+            <p className="body-category">{item.category}</p>
+            <p className="body-title">{item.name}</p>
+            <div className="body-rating">
+                <StarRating rating={item.starRating} />
             </div>
-            <p className="price">{item.originalPrice} {item.currency}</p>
+            <p className="body-price">{item.originalPrice} {item.currency}</p>
         </div>
     </div>
   )

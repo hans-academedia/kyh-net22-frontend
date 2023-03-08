@@ -79,22 +79,23 @@
             }
 
             .body-section {
-                .category {
+                text-align: center;
+
+                .body-category {
                     font-size: 16px;
                     font-weight: 500;
-                    color: #616365;
+                    color: $color-dark-3;
                     margin-top: 15px;
                 }
-                .title {
+                .body-title {
                     font-size: 20px;
                     font-weight: 700;
                 }
-                .ranking {
-                    color: #ff7373;
+                .body-rating {
+                    color: $color-theme;
                     font-size: 20px;
-                    margin-top: 10px;
                 }
-                .price {
+                .body-price {
                     font-size: 22px;
                     font-weight: 700;
                     margin-top: 10px;

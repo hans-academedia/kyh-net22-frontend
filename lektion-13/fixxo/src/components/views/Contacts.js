@@ -8,7 +8,7 @@ const Contacts = () => {
   return (
     <>
       <Header />
-      <Breadcrumb />
+      <Breadcrumb currentPage="Contacts" />
       <GoogleMaps />
       <ContactForm />
     </>
