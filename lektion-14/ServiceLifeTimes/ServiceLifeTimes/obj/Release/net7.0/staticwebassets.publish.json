@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "Hash": "IGks0k6rQ2HQIIcdvzQKWHLC6PqVCCuA/RwojBvUnXE=",
+  "Source": "ServiceLifeTimes",
+  "BasePath": "_content/ServiceLifeTimes",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ServiceLifeTimes\\wwwroot",
+      "Source": "ServiceLifeTimes",
+      "ContentRoot": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\NET22\\kyh-net22-frontend\\lektion-14\\ServiceLifeTimes\\ServiceLifeTimes\\wwwroot\\",
+      "BasePath": "_content/ServiceLifeTimes",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\NET22\\kyh-net22-frontend\\lektion-14\\ServiceLifeTimes\\ServiceLifeTimes\\wwwroot\\css\\site.css",
+      "SourceId": "ServiceLifeTimes",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\NET22\\kyh-net22-frontend\\lektion-14\\ServiceLifeTimes\\ServiceLifeTimes\\wwwroot\\",
+      "BasePath": "_content/ServiceLifeTimes",
+      "RelativePath": "css/site.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\NET22\\kyh-net22-frontend\\lektion-14\\ServiceLifeTimes\\ServiceLifeTimes\\wwwroot\\favicon.ico",
+      "SourceId": "ServiceLifeTimes",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\NET22\\kyh-net22-frontend\\lektion-14\\ServiceLifeTimes\\ServiceLifeTimes\\wwwroot\\",
+      "BasePath": "_content/ServiceLifeTimes",
+      "RelativePath": "favicon.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\NET22\\kyh-net22-frontend\\lektion-14\\ServiceLifeTimes\\ServiceLifeTimes\\wwwroot\\js\\site.js",
+      "SourceId": "ServiceLifeTimes",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HansMattin-Lassei\\Documents\\Education\\NET22\\kyh-net22-frontend\\lektion-14\\ServiceLifeTimes\\ServiceLifeTimes\\wwwroot\\",
+      "BasePath": "_content/ServiceLifeTimes",
+      "RelativePath": "js/site.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\site.js"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+C:\Users\HansMattin-Lassei\Documents\Education\NET22\kyh-net22-frontend\lektion-14\ServiceLifeTimes\ServiceLifeTimes\obj\Release\net7.0\PubTmp\Out\ServiceLifeTimes.exe
+C:\Users\HansMattin-Lassei\Documents\Education\NET22\kyh-net22-frontend\lektion-14\ServiceLifeTimes\ServiceLifeTimes\obj\Release\net7.0\PubTmp\Out\appsettings.Development.json
+C:\Users\HansMattin-Lassei\Documents\Education\NET22\kyh-net22-frontend\lektion-14\ServiceLifeTimes\ServiceLifeTimes\obj\Release\net7.0\PubTmp\Out\appsettings.json
+C:\Users\HansMattin-Lassei\Documents\Education\NET22\kyh-net22-frontend\lektion-14\ServiceLifeTimes\ServiceLifeTimes\obj\Release\net7.0\PubTmp\Out\ServiceLifeTimes.dll
+C:\Users\HansMattin-Lassei\Documents\Education\NET22\kyh-net22-frontend\lektion-14\ServiceLifeTimes\ServiceLifeTimes\obj\Release\net7.0\PubTmp\Out\ServiceLifeTimes.deps.json
+C:\Users\HansMattin-Lassei\Documents\Education\NET22\kyh-net22-frontend\lektion-14\ServiceLifeTimes\ServiceLifeTimes\obj\Release\net7.0\PubTmp\Out\ServiceLifeTimes.runtimeconfig.json
+C:\Users\HansMattin-Lassei\Documents\Education\NET22\kyh-net22-frontend\lektion-14\ServiceLifeTimes\ServiceLifeTimes\obj\Release\net7.0\PubTmp\Out\ServiceLifeTimes.pdb

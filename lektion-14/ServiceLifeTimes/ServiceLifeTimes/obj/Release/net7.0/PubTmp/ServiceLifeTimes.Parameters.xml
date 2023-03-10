@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="kyh-net22-services" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\HansMattin-Lassei\\Documents\\Education\\NET22\\kyh-net22-frontend\\lektion-14\\ServiceLifeTimes\\ServiceLifeTimes\\obj\\Release\\net7\.0\\PubTmp\\Out\\$" />
+  </parameter>
+</parameters>
