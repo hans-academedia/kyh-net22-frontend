@@ -1,0 +1,20 @@
+html, body {
+    @include default-font;
+    @include default-colors;
+}
+
+.hide {
+    display: none;
+}
+
+.menu-badge {
+    @include theme-colors;
+    @include content-center;
+    position: absolute;
+    right: -12px;
+    top: -12px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    font-size: 0.8rem;
+}
